@@ -200,7 +200,6 @@ public class CdiExtension implements Extension {
         afterBeanDiscovery.addBean(new ViewMapProducer());
         afterBeanDiscovery.addBean(new ViewProducer());
         afterBeanDiscovery.addBean(new DataModelClassesMapProducer());
-
         for (Type type : managedPropertyTargetTypes) {
             afterBeanDiscovery.addBean(new ManagedPropertyProducer(type, beanManager));
         }
